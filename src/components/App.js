@@ -16,7 +16,7 @@ export default class App extends Component {
   }
   
   onTermSubmit = async term =>{
-    const key1 ="AIzaSyA09CFNFE7THRzzPmS08OARISn0i9ig0a0";
+    const key1 ={your api key};
     const response = await youtube.get(`/search?key=${key1}&q=${term}`);
 
     console.log(response);
